@@ -1,4 +1,3 @@
-// src/schemas/order.entity.ts
 import { Table, Column, Model, ForeignKey, BelongsTo } from 'sequelize-typescript';
 import { BookableObject } from './bookable-object.entity';
 
