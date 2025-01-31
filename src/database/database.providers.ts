@@ -2,7 +2,7 @@
 import { Sequelize } from 'sequelize-typescript';
 import { BookableObject } from 'src/schemas/bookable-object.entity';
 import { Order } from 'src/schemas/order.entity';
-import { ConfigService } from 'src/services/config.service';
+import { ConfigService } from 'src/services/settings.service';
 
 export const databaseProviders = [
     {

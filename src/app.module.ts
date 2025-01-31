@@ -4,10 +4,12 @@ import { BookingService } from './services/booking.service';
 import { bookingProviders } from './providers/booking,provider';
 import { ordersProviders } from './providers/order.provider';
 import { DatabaseModule } from './database/database.module';
-import { ConfigModule } from './services/config.module';
+import { SettingsModule } from './services/settings.module';
 
 @Module({
-  imports: [DatabaseModule, ConfigModule],
+  imports: [DatabaseModule, 
+          SettingsModule,
+        ],
   controllers: [BookingController],
   providers: [BookingService, ...bookingProviders, ...ordersProviders],
 })
